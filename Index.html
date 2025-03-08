@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="ashboard.html">Dashboard</a>
+    <a href="view-profile.html">Profile</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="sidebar-footer">
+    © 2025 Stylish Website
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content" id="main-content">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div>
+      <button class="toggle-btn" id="toggle-btn">☰</button>
+    </div>
+    <div class="nav-links">
+      <a href="index html">Home</a>
+      <a href="ashboard.html">Dashboard</a>
+      <a href="#contact">Contact</a>
+      <div class="profile-container">
+        <div class="profile" onclick="toggleDropdown()">
+          <img id="navProfileImage" src="image.jpeg" alt="Profile Picture">
+          <span class="profile-name">John Doe</span>
+        </div>
+        <ul class="dropdown-menu" id="dropdown">
+          <li><a href="view-profile.html">View Profile</a></li>
+          <li><a href="edit-profile.html">Edit Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <button class="toggle-btn" id="theme-btn">🌓</button>
+    </div>
+  </nav>
+
+  <!-- Content Section -->
+<section class="hero">
+   <div class="content">
+    <h2>Welcome to the Health Tracker</h2>
+    <p><i>We from Group T present the health tracker which lets you track your health and stores it for future references.</i></p>
+   </div>
+</section>  
+  <div class="content">
+      <div>
+          <h1>Why should You choose Health Tracker?</h1>
+      </div>
+    <div class="card">
+        <img src="card1.jpeg" alt="a phone with a lot of health metrics">
+        <div>
+          <h3>Better health awareness</h3>
+          <p><i>Our health tracker monitors a range of vital health metrics like weight, heart rate e.t.c</i></p>
+      </div>
+    </div>
+    <div class="card">
+        <img src="card2.jpeg" alt="a girl working out">
+        <div>
+          <h3>Improved fitness goals</h3>
+          <p><i>Our health tracker tracks your workout and step counts, making it easier for you to see your progress and work towards it.</i></p>
+      </div>
+    </div>
+    <div class="card">
+        <img src="card3.jpeg" alt="a phone showing different reports">
+        <div>
+          <h3>Easy and Secure</h3>
+          <p><i>Our health tracker stores your results and reports in one place and makes for easy and secure retrieval.</i></p>
+        </div>
+    </div>
+  </div>  
+<section id="contact" class="contact">
+    <p>Contact Us:</p>
+    <div class="contact-links">
+        <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+        <a href="https://www.gmail.com"><i class="fa-solid fa-envelope fa-2x"></i></a>            
+    </div>
+</section>
+</div>
+
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/c4951a9c2b.js" crossorigin="anonymous"></script>    
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Dashboard</a>
+    <a href="view-profile.html">Profile</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="sidebar-footer">
+    © 2025 Stylish Website
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="main-content" id="main-content">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div>
+      <button class="toggle-btn" id="toggle-btn">☰</button>
+    </div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Dashboard</a>
+      <a href="#">Contact</a>
+      <div class="profile-container">
+        <div class="profile" onclick="toggleDropdown()">
+          <img id="navProfileImage" src="image.jpeg" alt="Profile Picture">
+          <span class="profile-name">John Doe</span>
+        </div>
+        <ul class="dropdown-menu" id="dropdown">
+          <li><a href="view-profile.html">View Profile</a></li>
+          <li><a href="edit-profile.html">Edit Profile</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <button class="toggle-btn" id="theme-btn">🌓</button>
+    </div>
+  </nav>
+  
+</section>  
+  <div class="content">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some descriptive content here.</p>
+    </div>
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Another card with information.</p>
+    </div>
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>One more card for demonstration.</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

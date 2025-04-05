@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Health Tracker</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style3.css">
 </head>
 <body>
 
 <!-- Sidebar -->
 <div class="sidebar" id="sidebar">
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Dashboard</a>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
     <a href="view-profile.html">Profile</a>
     <a href="#">Contact</a>
   </nav>
@@ -30,9 +30,9 @@
       <button class="toggle-btn" id="toggle-btn">☰</button>
     </div>
     <div class="nav-links">
-      <a href="#">Home</a>
-      <a href="#">Dashboard</a>
-      <a href="#">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="#contact">Contact</a>
       <div class="profile-container">
         <div class="profile" onclick="toggleDropdown()">
           <img id="navProfileImage" src="image.jpeg" alt="Profile Picture">
@@ -46,26 +46,47 @@
       </div>
       <button class="toggle-btn" id="theme-btn">🌓</button>
     </div>
-  </nav>
-  
-</section>  
-  <div class="content">
-    <div class="card">
-      <h3>Card 1</h3>
-      <p>Some descriptive content here.</p>
-    </div>
-    <div class="card">
-      <h3>Card 2</h3>
-      <p>Another card with information.</p>
-    </div>
-    <div class="card">
-      <h3>Card 3</h3>
-      <p>One more card for demonstration.</p>
-    </div>
-  </div>
+  </nav>  
+
+<main class="content">
+            <h1>Dashboard</h1>
+</br>
+<br/>
+            <!-- Top Ratings Section -->
+            <div id="notification" class="notification">New data received!</div>
+            <div class="ratings-container">
+                <div class="rating-box">
+                    <h3>Daily Steps</h3>
+                    <p id="dailySteps">--</p>
+                </div>
+                <div class="rating-box">
+                    <h3>Calorie intake</h3>
+                    <p id="calories">--</p>
+                </div>
+                <div class="rating-box">
+                    <h3>Average Weight(kg)</h3>
+                    <p id="weight">--</p>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+           <div class="grid-container">
+    <div class="chart-card"><canvas id="chart1"></canvas></div>
+    <div class="chart-card"><canvas id="chart2"></canvas></div>
+    <div class="chart-card"><canvas id="chart3"></canvas></div>
+    <div class="chart-card"><canvas id="chart4"></canvas></div>
+    <div class="chart-card"><canvas id="chart5"></canvas></div>
+    <div class="chart-card"><canvas id="chart6"></canvas></div>
+    <div class="chart-card"><canvas id="chart7"></canvas></div>
+    <div class="chart-card"><canvas id="chart8"></canvas></div>
+    <div class="chart-card"><canvas id="chart9"></canvas></div>
 </div>
+        </main>
+    </div>
 
 <script src="script.js"></script>
+<script src="https://kit.fontawesome.com/c4951a9c2b.js" crossorigin="anonymous"></script>    
+
 
 </body>
 </html>
